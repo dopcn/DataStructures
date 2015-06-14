@@ -1,0 +1,266 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		87C293E11B2BE355000F17AE /* TreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 87C293E01B2BE355000F17AE /* TreeNode.m */; };
+		87DDA7D61B29BE7F004E7386 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DDA7D51B29BE7F004E7386 /* main.swift */; };
+		87DDA7DE1B2A70EC004E7386 /* BinaryTreePrinter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 87DDA7DD1B2A70EC004E7386 /* BinaryTreePrinter.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		87DDA7D01B29BE7F004E7386 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		87C293DC1B2BDE37000F17AE /* BinaryTreePrinter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinaryTreePrinter.h; sourceTree = "<group>"; };
+		87C293DF1B2BE355000F17AE /* TreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeNode.h; sourceTree = "<group>"; };
+		87C293E01B2BE355000F17AE /* TreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeNode.m; sourceTree = "<group>"; };
+		87DDA7D21B29BE7F004E7386 /* binaryTree */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = binaryTree; sourceTree = BUILT_PRODUCTS_DIR; };
+		87DDA7D51B29BE7F004E7386 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		87DDA7DC1B2A70EC004E7386 /* binaryTree-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "binaryTree-Bridging-Header.h"; sourceTree = "<group>"; };
+		87DDA7DD1B2A70EC004E7386 /* BinaryTreePrinter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BinaryTreePrinter.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87DDA7CF1B29BE7F004E7386 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		87DDA7C91B29BE7F004E7386 = {
+			isa = PBXGroup;
+			children = (
+				87DDA7D41B29BE7F004E7386 /* binaryTree */,
+				87DDA7D31B29BE7F004E7386 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		87DDA7D31B29BE7F004E7386 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87DDA7D21B29BE7F004E7386 /* binaryTree */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87DDA7D41B29BE7F004E7386 /* binaryTree */ = {
+			isa = PBXGroup;
+			children = (
+				87DDA7D51B29BE7F004E7386 /* main.swift */,
+				87C293DF1B2BE355000F17AE /* TreeNode.h */,
+				87C293E01B2BE355000F17AE /* TreeNode.m */,
+				87C293DC1B2BDE37000F17AE /* BinaryTreePrinter.h */,
+				87DDA7DD1B2A70EC004E7386 /* BinaryTreePrinter.mm */,
+				87DDA7DC1B2A70EC004E7386 /* binaryTree-Bridging-Header.h */,
+			);
+			path = binaryTree;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		87DDA7D11B29BE7F004E7386 /* binaryTree */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87DDA7D91B29BE7F004E7386 /* Build configuration list for PBXNativeTarget "binaryTree" */;
+			buildPhases = (
+				87DDA7CE1B29BE7F004E7386 /* Sources */,
+				87DDA7CF1B29BE7F004E7386 /* Frameworks */,
+				87DDA7D01B29BE7F004E7386 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = binaryTree;
+			productName = binaryTree;
+			productReference = 87DDA7D21B29BE7F004E7386 /* binaryTree */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87DDA7CA1B29BE7F004E7386 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = weizhou;
+				TargetAttributes = {
+					87DDA7D11B29BE7F004E7386 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 87DDA7CD1B29BE7F004E7386 /* Build configuration list for PBXProject "binaryTree" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 87DDA7C91B29BE7F004E7386;
+			productRefGroup = 87DDA7D31B29BE7F004E7386 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87DDA7D11B29BE7F004E7386 /* binaryTree */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87DDA7CE1B29BE7F004E7386 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87DDA7DE1B2A70EC004E7386 /* BinaryTreePrinter.mm in Sources */,
+				87DDA7D61B29BE7F004E7386 /* main.swift in Sources */,
+				87C293E11B2BE355000F17AE /* TreeNode.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		87DDA7D71B29BE7F004E7386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		87DDA7D81B29BE7F004E7386 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		87DDA7DA1B29BE7F004E7386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "binaryTree/binaryTree-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		87DDA7DB1B29BE7F004E7386 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "binaryTree/binaryTree-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		87DDA7CD1B29BE7F004E7386 /* Build configuration list for PBXProject "binaryTree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87DDA7D71B29BE7F004E7386 /* Debug */,
+				87DDA7D81B29BE7F004E7386 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87DDA7D91B29BE7F004E7386 /* Build configuration list for PBXNativeTarget "binaryTree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87DDA7DA1B29BE7F004E7386 /* Debug */,
+				87DDA7DB1B29BE7F004E7386 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 87DDA7CA1B29BE7F004E7386 /* Project object */;
+}
