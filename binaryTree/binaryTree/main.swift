@@ -97,49 +97,37 @@ func minInTree(root: TreeNode) -> Int {
 
 func delete(value: Int, root: TreeNode) {
     func deleteNode(value: Int, root: TreeNode) {
-        if value < root.data {
-            if root.left != nil && root.left!.data != value {
-                deleteNode(value, root: root.left!)
-            } else if root.left != nil && value == root.left!.data {
-                //需要删除的出现了
-                if root.left!.left == nil && root.left!.right == nil {
-                    //1. 没有子节点
-                    root.left = nil
-                } else if root.left!.left != nil && root.left!.right == nil {
-                    //2. 只有左节点
-                    root.left = root.left!.left
-                } else if root.left!.left == nil && root.left!.right != nil {
-                    //3. 只有右节点
-                    root.left = root.left!.right
-                } else {
-                    //4. 有两个节点
-                    let max = maxInTree(root.left!.left!)
-                    deleteNode(max, root: root.left!)
-                    root.left!.data = max
-                }
-            }
+        var targetNode: TreeNode? = nil
+        if value <= root.data {
+            targetNode = root.left
         } else if value > root.data {
-            if root.right != nil && root.right!.data != value {
-                deleteNode(value, root: root.right!)
-            } else if root.right != nil && value == root.right!.data {
-                //需要删除的出现了
-                if root.right!.left == nil && root.right!.right == nil {
-                    //1. 没有子节点
+            targetNode = root.right
+        }
+        if targetNode != nil && targetNode!.data != value {
+            deleteNode(value, root: targetNode!)
+        } else if targetNode != nil && value == targetNode!.data {
+            //需要删除的出现了
+            if targetNode!.left == nil && targetNode!.right == nil {
+                //1. 没有子节点
+                if value <= root.data {
+                    root.left = nil
+                } else if value > root.data {
                     root.right = nil
-                } else if root.right!.left != nil && root.right!.right == nil {
-                    //2. 只有左节点
-                    root.right = root.right!.left
-                } else if root.right!.left == nil && root.right!.right != nil {
-                    //3. 只有右节点
-                    root.right = root.right!.right
-                } else {
-                    //4. 有两个节点
-                    let max = maxInTree(root.right!.left!)
-                    deleteNode(max, root: root.right!)
-                    root.right!.data = max
-                }
+                }       
+            } else if targetNode!.left != nil && targetNode!.right == nil {
+                //2. 只有左节点
+                targetNode = targetNode!.left
+            } else if targetNode!.left == nil && targetNode!.right != nil {
+                //3. 只有右节点
+                targetNode = targetNode!.right
+            } else {
+                //4. 有两个节点
+                let max = maxInTree(targetNode!.left!)
+                deleteNode(max, root: targetNode!)
+                targetNode!.data = max
             }
         }
+        
     }
     
     //单独处理根
@@ -171,6 +159,6 @@ func invert(root: TreeNode?) {
     node.right = tmp
 }
 
-invert(root)
+delete(10, root: root)
 
 BinaryTreePrinter.printTreeAtRoot(root)
