@@ -118,9 +118,9 @@ struct MinHeap<T: Comparable>: HeapType {
             if ( a > b ) { return CFComparisonResult.CompareGreaterThan }
             return CFComparisonResult.CompareLessThan
         }
-        let callbackPointer = UnsafeMutablePointer<CFBinaryHeapCallBacks>.alloc(1)
-        callbackPointer.initialize(callbacks)
-        heap = CFBinaryHeapCreate(kCFAllocatorDefault, 0, callbackPointer, nil)
+//        let callbackPointer = UnsafeMutablePointer<CFBinaryHeapCallBacks>.alloc(1)
+//        callbackPointer.initialize(callbacks)
+        heap = CFBinaryHeapCreate(kCFAllocatorDefault, 0, &callbacks, nil)
         for item in items {
             let pointer = UnsafeMutablePointer<T>.alloc(1)
             pointer.initialize(item)
